@@ -1,38 +1,116 @@
-.App {
+#clockDisplay {
+  color: #17d4fe;
+}
+
+#Tehran {
+  top: 30%;
+}
+
+#Melbourn {
+  display: none;
+  top: 40%;
+}
+#Dubai {
+  display: none;
+  top: 50%;
+}
+
+#NewDelhi {
+  display: none;
+  top: 60%;
+}
+#Tokyo {
+  display: none;
+  top: 70%;
+}
+
+#HongKong {
+  display: none;
+  top: 80%;
+}
+
+.clock {
+  position: absolute;
   text-align: center;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 40px;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 7px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.styler {
+  padding: 8px;
+  margin: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#blueStyle {
+  background-color: #17d4fe;
+  color: #000000;
+}
+#redStyle {
+  background-color: #d40707;
+  color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Comfortaa", cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.dropbtn {
+  background-color: #0df409;
+  color: #000000;
+  padding: 8px;
+  margin: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropbtn:hover {
+  transition: 0.2s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  max-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown-content:hover {
+  transition: 0.2s;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #41a73f;
+  transition: background-color 0.5s;
 }
