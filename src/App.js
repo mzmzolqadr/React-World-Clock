@@ -16,7 +16,7 @@ import BlueStyle from "./Styler/BlueStyle";
 function App() {
   return (
     <div className="App">
-      <h1>My Digital Clock</h1>
+      <h1>React World Clock</h1>
       <div id="panel" className="left-panel">
         <button
           id="redStyle"
