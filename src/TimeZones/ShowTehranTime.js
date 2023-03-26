@@ -6,7 +6,7 @@ const ShowTehranTime = () => {
   useEffect(() => {
     setInterval(() => {
       const date = new Date();
-      let hour = date.getUTCHours() + 3;
+      let hour = date.getUTCHours() + 4;
       let minute = date.getUTCMinutes() + 30;
       let seconds = date.getSeconds();
       let session = "AM";
